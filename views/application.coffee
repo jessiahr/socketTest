@@ -5,7 +5,7 @@ jQuery ->
 #  // where our WebSockets logic will go later
   socket = ""
   host     =""
-  host = "ws://localhost:3001";
+  host = "http://pure-falls-7592.herokuapp.com/:3001";
   connect = ->
 
     try
