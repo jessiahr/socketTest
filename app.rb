@@ -15,7 +15,7 @@ EM.run do
 
   @clients = []
 
-  EM::WebSocket.start(:host => 'ws://pure-falls-7592.herokuapp.com', :port => '3001') do |ws|
+  EM::WebSocket.start(:host => '0.0.0.0', :port => '3001') do |ws|
     ws.onopen do |handshake|
       @clients << ws
       puts "event"
