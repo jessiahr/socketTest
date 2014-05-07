@@ -5,7 +5,7 @@ jQuery ->
 #  // where our WebSockets logic will go later
   socket = ""
   host     =""
-  host = "ws://pure-falls-7592.herokuapp.com/:3001";
+  host = "ws://localhost:3001";
   connect = ->
 
     try
@@ -73,7 +73,6 @@ jQuery ->
 
       if (event.keyCode == 13)
         send()
-        alert event.keyCode
     )
 
     $("#disconnect").click(()->
